@@ -75,3 +75,120 @@ nav {
     font-size: 18px;
     border-radius: 4px;
 }
+
+.profile {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 3rem 3rem 7rem;
+    margin-top: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+}
+
+.cd-headline.loading-bar .cd-words-wrapper::after {
+    background: linear-gradient(to right, var(--secondary), var(--success));
+}
+
+span b {
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+.left {
+    display: flex;
+    flex: 2;
+    align-items: center;
+}
+
+.right {
+    flex: 1;;
+}
+
+.left h2 {
+    color: var(--fade);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.left p {
+    color: var(--mild);
+    font-size: 14px;
+}
+
+.avatar img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.avatar span {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: var(--info);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure);
+    box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05);
+    cursor: pointer;
+}
+
+.contact {
+    list-style: none;
+    margin-bottom: 1.6rem;
+}
+
+.contact li {
+    color: var(--ternary);
+    margin-bottom: .7rem;
+    font-size: 14px;
+}
+
+.contact li i {
+    font-size: 18px;
+    margin-right: 0.3rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.socials li {
+    margin-right: 0.8rem;
+    border-radius: 50%;
+}
+
+.socials li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: var(--pure);
+    line-height: 36px;
+    text-align: center;
+    margin-right: 4px;
+}
+
+.socials li:nth-child(1) {
+    background: var(--secondary);
+}
+
+.socials li:nth-child(2) {
+    background: var(--twitter);
+}
+
+.socials li:nth-child(3) {
+    background: var(--dribble);
+}
