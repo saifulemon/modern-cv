@@ -359,8 +359,9 @@ p.center {
     display: block;
     height: 100%;
     background: var(--info);
-    width: 50%;
+    width: 0;
     position: relative;
+    transition: all 2s ease-in-out;
 }
 
 .tooltip {
