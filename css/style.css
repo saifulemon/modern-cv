@@ -18,6 +18,7 @@
     --success : #1ecab8;
     --danger : #f1646c;
     --dark-blue : #28365f;
+    --dark-gray : #404040;
 
 }
 
@@ -292,7 +293,7 @@ span b {
 }
 
 .heading i {
-    color: var(--fade);
+    color: var(--info);
     font-size: 52px;
 }
 
@@ -372,4 +373,47 @@ p.center {
     font-size: 16px;
     text-transform: uppercase;
     color: var(--ternary);
+}
+
+.counter-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--dark-gray);
+    
+}
+
+.project, .clients, .award {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    
+}
+
+.project h3, .clients h3, .award h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--fade);
+    margin-bottom: 10px;
+}
+
+.project h5, .clients h5, .award h5 {
+    font-size: 18px;
+    color: var(--fade);
+}
+
+.icon-counter {
+    font-size: 42px;
+    margin-right: 15px;
+}
+
+.cell {
+    color: gold;
+}
+
+.smile {
+    color: green;
+}
+
+.award-icon {
+    color: #db15db;
 }
