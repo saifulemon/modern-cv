@@ -417,3 +417,50 @@ p.center {
 .award-icon {
     color: #db15db;
 }
+
+.work-heading {
+    width: 200px;
+}
+
+.img-fluid {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid var(--dribble);
+    border-radius: 2px;
+}
+
+.work-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tabs ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.tabs ul li a {
+    color: var(--fade);
+    border-bottom: 1px solid transparent;
+    padding: 10px 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.tabs ul li a.active {
+    color: var(--info);
+    border-color: var(--info);
+    transition: all .3s ease-in-out;
+}
+
+.portfolio {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.item-wrap {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}

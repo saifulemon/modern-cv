@@ -57,4 +57,59 @@ $(document).ready(function() {
         } 
     }, options)
     sectionObserver.observe(counterSection);
+
+
+
+    // portfolio gallery
+    let $wrapper = $('.portfolio');
+
+    // initialize isotope
+    $wrapper.isotope({
+        filter : '*',
+        layoutMode : 'masonry',
+        animationsOption : {
+            duration : 750,
+            easing : 'leniar'
+        }
+
+    });
+
+    let links = document.querySelectorAll('.tabs a');
+    links.forEach(link => {
+
+        let selector = link.dataset.filter;
+
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            $wrapper.isotope({
+                filter : selector,
+                layoutMode : 'masonry',
+                animationsOption : {
+                    duration : 750,
+                    easing : 'leniar'
+                } 
+            });
+
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+            e.target.classlist.add('active');
+        });
+    });
+
+
+
+    // magnify pop up
+    $('.magnify').magnificPopup({
+        type : 'image',
+        gallery : {
+            enabled : true
+        },
+        zoom : {
+            enable : true
+        }
+    })
+
+    
 });
