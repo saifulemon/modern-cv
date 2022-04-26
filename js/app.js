@@ -109,7 +109,14 @@ $(document).ready(function() {
         zoom : {
             enable : true
         }
-    })
+    });
 
+    
+    // slider
+    $('.slider-on').slick({
+        autoplay: true,
+        arrows: false,
+        infinite: true,
+    });
     
 });
