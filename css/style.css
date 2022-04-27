@@ -512,3 +512,97 @@ p.center {
     align-items: center;
     justify-content: space-around;
 }
+
+.contactMe {
+    width: 105px;
+}
+
+.wrapper-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+    margin-top:40px;
+    align-items: center;
+}
+
+.social-info{
+    color: var(--ternary);
+}
+
+.social-info > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.social-info > div div:nth-child(1) {
+    margin-right: 22px;
+}
+
+.social-info i {
+    font-size: 34px;
+    color: var(--info);
+}
+
+.social-info h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.social-info h4 + span {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.form-grp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.form-grp > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grp > div label {
+    color: var(--ternary);
+    margin-bottom: 8px;
+}
+
+.form-grp > div input, .form-grp.msg-wrapper textarea {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--dark-blue);
+    color: var(--ternary);
+    font-size: 16px;
+}
+
+.form-grp > div input:focus, .form-grp.msg-wrapper textarea:focus {
+    border-color: var(--secondary);
+    outline: none;
+}
+
+.form-grp.msg-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.form button {
+    background: var(--info);
+    border: none;
+    padding: 1rem 2rem;
+    color: var(--pure);
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.form button:hover {
+    background-color: var(--secondary);
+}
