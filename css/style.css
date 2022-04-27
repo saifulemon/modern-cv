@@ -33,7 +33,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     background: var(--dark);
     -webkit-font-smoothing: antialiased;
-    height: 5000px;
+    padding-bottom: 4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -605,4 +605,12 @@ p.center {
 
 .form button:hover {
     background-color: var(--secondary);
+}
+
+footer {
+    background-color: var(--footer);
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 14px;
+    color: var(--ternary);
 }
