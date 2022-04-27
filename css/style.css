@@ -221,7 +221,7 @@ span b {
     width: 89px;
 }
 
-.wrapper {
+.wrapper-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16rem;
@@ -329,6 +329,11 @@ p.center {
     border: 2px solid var(--info);
     border-radius: 50%;
     margin: -21px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .timeline-wrapper {
@@ -613,4 +618,119 @@ footer {
     padding: 2rem 0;
     font-size: 14px;
     color: var(--ternary);
+}
+
+
+
+
+/* responsive for all devices */
+@media only screen and (max-width: 1280px) {
+    .container {
+        max-width: 90%;
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+        clip-path: none;
+    }
+
+    .profile .left {
+        margin-bottom: 3rem;
+    }
+
+    .profile .right {
+        align-self: flex-end;
+    }
+
+    .work-wrapper {
+        display: block;
+    }
+
+    .slider-wrpper {
+        margin-bottom: 8rem;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .wrapper {
+        display: block;
+    }
+
+    .qualification {
+        margin-bottom: 6rem;
+    }
+
+    .brands-wrapper {
+        flex-wrap: wrap;
+    }
+    .brands-wrapper img {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-about {
+        display: block;
+    }
+    .wrapper-about .content{
+        margin-bottom: 5rem;
+    }
+
+    .counter-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .counter-wrapper .project, .clients, .award {
+        box-sizing: border-box;
+        margin-bottom: 4rem;
+    }
+
+    .wrapper-box {
+        display: block;
+    }
+
+    .social-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .profile {
+        align-items: center;
+    }
+
+    .profile .right{
+        align-self: center;
+    }
+
+    .tabs ul {
+        flex-wrap: wrap;
+    }
+
+    .tabs ul li{
+        margin-bottom: 4rem;
+    }
+
+    .portfolio {
+        width: 65%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .item-wrap{
+        width: 100%;
+    }
+
+    .form-grp {
+        grid-template-columns: 1fr;
+    }
 }
